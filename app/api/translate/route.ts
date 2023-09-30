@@ -49,7 +49,4 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({
     translation: chatCompletion.choices[0].message.content,
   });
-  // const openai = new OpenAI({
-  //   apiKey: process.env.OPENAI_API_KEY,
-  // });
 }

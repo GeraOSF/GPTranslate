@@ -5,9 +5,8 @@ import { Clipboard, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 type Props = {
-  className: string;
   text: string;
-};
+} & React.ComponentProps<typeof Button>;
 
 export default function CopyButton({ className, text }: Props) {
   const [isCopied, setIsCopied] = useState(false);

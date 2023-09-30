@@ -70,13 +70,15 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-2 sm:flex-row">
           <Textarea
-            className="border-2"
+            className="h-full border-2"
             onChange={(e) => setFromText(e.target.value)}
             value={fromText}
           />
           <div className="relative w-full">
             <Textarea
-              className={`${isTranslating && "text-muted-foreground"} border-2`}
+              className={`${
+                isTranslating && "text-muted-foreground"
+              } h-full border-2`}
               value={isTranslating ? "Translating..." : toText}
               readOnly
             />
